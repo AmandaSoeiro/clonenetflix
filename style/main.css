@@ -1,0 +1,213 @@
+
+:root{ /*raiz do documento (tipo de variaveis)*/
+--vermelho: #E30813;
+--preta: #000;
+/* QUANDO FOR CRIAR UM SITE É ACONSELHAVEL JÁ COLOCAR AS CORES PADRÕES NAS VARIAVEIS)*/
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box; /*para não ultrapassar na borda da caixa (para não ultrapassar o limite*/
+}
+
+/*elementos base*/
+body{
+background: var(--preta); /* quando eu quiser usar uma cor que ja ta na variavel é só colocar var(-- e a cor)*/
+font-family:Arial, Helvetica, sans-serif;
+color:white; /*cor do texto do corpo da pagina*/
+}
+
+header .container-menu {
+
+    display: flex; /* ele alinha o elemento em forma de linha*/
+    flex-direction: row; /* é mais pra carater semanico do display flex*/
+    align-items: center; /*para alinha os itens no centro*/
+    justify-content: space-between; /* cria espaço entre a h1(logo) e nav(menu)*/
+    margin-right: 30px;
+    margin-left: 25px;
+}
+
+
+header .logo img{
+    
+    height: 30px;
+    margin: 10px;
+    margin-top: 15px;
+  
+}
+
+header nav a{
+    text-decoration: none; /*tira as linhas que fica em baico do link*/
+    color: rgb(182, 176, 176);
+    margin-right: 10px; /*margem a direita*/
+
+}
+
+header nav a:hover{
+    color: #fff /*toda vez que o mouser passar em cima do menu muda a cor*/
+}
+/*filme principal*/
+
+.filme-principal{
+    font-size: 16px; /*tamanho da fonte*/
+    background: linear-gradient(rgba(0,0,0,.30),rgba(0,0,0.10)100%), url("/img/capa3.jpg"); /*colocar imagem de fundo. a função linear-gradiente transforma as cores em gradiente e a porcentagem dar a transparencia do gradiente*/
+    height:600px; /*tamanho da imagem*/
+    background-size:cover;/* para adaptar o tamanho da imagem dentro da caixa*/
+    display: flex; /*joga todos os objeto em forma de linha*/
+    flex-direction: column; /* coloca o display flex em coluna ao inves de linha*/
+    justify-content: center; /* quando ultilizar essa função os objetos vão ficar centralizado dentro da coluna*/
+    align-items: flex-start; /* para os objetos começarem sempre da esquerda*/
+    
+}
+
+
+.filme-principal .descricao{
+    margin-top:10px; /*espaçamento entre descrição e titulo*/
+    margin-bottom: 30px; /*distanciamento do botão asistir agora e ...*/
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 23px; /* espaçamento entre linhas*/
+    
+}
+
+ .titulo img {
+    margin-top: 5%; /*empurra pra baixo*/
+    margin-bottom: 8%;
+    height: 100px; /*logo do filme*/
+  
+  
+}
+
+.titulo-filme{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+  
+}
+
+.botoes{
+    
+    padding: 15px 30px; /*espaçamento interno do elemento, quando eu passo somente um valo ele se repete nas 4 posiçoes, o primeiro valor ele se refere pra cima e baixo e o segundo pros lados, posso definir um espaçamentos pros quatros lados também*/
+    font-size: 12px;
+    color: white;
+    background-color: rgba(0,0,0,.50) ;
+    margin-right: 15px; /*espaçamento entre os botões*/
+    border: none;
+    box-sizing: border-box;
+    border-radius: 15px;
+  
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+
+.botoes:hover{ /*muda as cores dos botões ao clicar*/
+background-color: var(--vermelho);
+color: white;
+}
+
+.botoes i{
+    margin: 3px; /*espaçamento do incone*/
+}
+
+.container{ 
+    margin-left: 60px; /* espaçamento de todos os elementos dentro da div*/
+}
+
+.box-filme{
+    height: 100%; /*tamanho da imagem*/
+    width:100%; /*largura da imagem*/
+    display:block;
+
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+   
+}
+
+.social-media{
+display: flex;
+justify-content:right;
+margin: 10px 10px;
+}
+
+.social-media i{
+    margin: 5px;
+   font-size: 30px;
+   color: white;
+
+   cursor: pointer;
+    transition: .3s ease all;
+
+}
+
+.social-media i:hover{
+color: var(--vermelho);
+
+}
+
+.box-filme{
+    position: relative;
+    top:0;
+    max-width: 100%;
+    padding: 0;
+    
+
+ 
+}
+
+.box-filme:hover{
+    border: 1px white solid;
+    box-shadow:0 4px 4px white;
+    transition: all .1s ease-in-out;
+    transition: 1s;
+    background-color: #000000; 
+    opacity: 0.2;
+   
+}
+
+.container-banner{
+    display: flex; /* ele alinha o elemento em forma de linha*/
+    flex-direction: row; /* é mais pra carater semanico do display flex*/
+    align-items: center; /*para alinha os itens no centro*/
+    justify-content: space-between; /* cria espaço entre a h1(logo) e nav(menu)*/
+   
+}
+
+.titulo-banner{
+    font-size: 50px;
+    width: 100%;
+   
+}
+
+.descricao-banner{
+    font-size: 26px;
+    width: 75%;
+}
+
+.container-banner{
+    margin-top: 20px;
+    margin-left: 85px;
+    margin-right: 85px;
+    margin-bottom: 20px;
+    
+}
+
+.video{
+    height: 300px;
+    border: 8px #4d4d4d solid;
+    border-radius: 5px;
+}
+
+.autor img{
+    width: 600px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.autor img:hover{
+        transition: all .1s ease-in-out;
+        background-color: #000000; 
+        opacity: 0.2;
+}

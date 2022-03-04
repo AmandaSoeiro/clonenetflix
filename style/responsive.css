@@ -1,0 +1,90 @@
+
+
+
+@media screen and (max-width:700px) {
+    header .container-menu{
+        display:flex;
+        flex-direction: column; /* quando a tela tiver com 700px o menur fica abaixo da logo*/
+        align-items: center;
+    }
+
+    .descricao{
+        width:100%;
+       
+      
+    }
+
+    .container {
+    margin-top: 680px;
+    margin-left: 30px;
+    }
+
+    .botoes{
+
+        width: 200px;
+        height: 50px;
+        color:white;
+        background-color: var(--vermelho) ;  
+
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+
+.botoes:hover{ /*muda as cores dos botões ao clicar*/
+background-color: white;
+color: var(--vermelho);
+        
+
+    }
+
+.filme-principal{
+    
+    background: linear-gradient(rgba(0,0,0,.30),rgba(0,0,0.10)100%), url("/img/capamin.jpg");
+    height:300px;
+    background-size:cover;
+    margin-top: 5px;
+    margin-bottom: 400px;
+}
+
+.container-banner{
+    display:flex;
+    flex-direction: column; /* quando a tela tiver com 700px o menur fica abaixo da logo*/
+    margin-left: 35px;
+}
+
+
+.titulo-banner{
+    font-size: 30px;
+    width:100%;
+   
+}
+
+.descricao-banner{
+    font-size: 18px;
+    width: 100%;
+}
+
+
+.video{
+    
+       margin-top: 30px;
+        height: 300px;
+        border: 8px #4d4d4d solid;
+        border-radius: 5px;
+    
+    }
+
+.autor img{
+        width: 300px;
+        background-size: cover;
+        margin-left: 15px;
+    }
+
+}
+    
+@media screen and (min-width:1000px) {
+    .descricao{
+        width: 50%;
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <title>NETFLIX CLONE</title>
+</head>
+
+<body>
+    <header>
+        <!--um tipo de div (caixa)-->
+        <div class="container-menu">
+            <h2 class="logo"> <img src="/img/netflixlogo.png"> </h2>
+            <nav>
+                <!--essa tag é para menu de navegação-->
+                <a href="#"></a> <!-- atalho alt+shift seta pra baixo para fazer varias copias-->
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </nav>
+            <div class="social-media">
+                <!--incone com links-->
+                <a href="https://github.com/AmandaSoeiro?tab=repositories" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/amanda-soeiro/" target="_blank>">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--essa também é uma div (main informa que é o conteudo principal)-->
+        <div class="filme-principal">
+            <div class="container">
+                <div class="titulo"> <img src="/img/logo.png"></div>
+
+                <h1 class="titulo-filme">Anne with an E</h1>
+
+                <p class="descricao">O mundo de Green Gables que Anne tanto se expande com novas pessoas e
+                    emocionantes histórias de amor, perdas e amadurecimento.
+                <div class="bott">
+                    <!--qundo eu criei uma div dentro da div container as propriedades dela não serão repassada para a div botoes-->
+                    <a href="https://www.netflix.com/br/title/80136311" target="_blank"><button role="button"
+                            class="botoes">
+                            <!-- é importante informar role="button" pra deixar claro que essa função é de botão para todos os dispositivos-->
+                            <i class="fas fa-play"></i>
+                            ASSISTIR AGORA
+                        </button></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=Hx_RkKTNBzA" target="_blank"><img class="box-filme"
+                        src="img/min1.jpg" alt="" srcset=""></a>
+
+            </div>
+            <div class="item">
+                <a href="https://www.netflix.com/br/title/70251536" target="_blank"><img class="box-filme"
+                        src="img/min2.jpg" alt="" srcset=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=lCPh2VAQ9fc" target="_blank"><img class="box-filme"
+                        src="img/min3.jpg" alt="" srcset=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=Di4zc-J1xg0" target="_blank"><img class="box-filme"
+                        src="img/min4.jpg" alt="" srcset=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=rVQelqH7dH4" target="_blank"><img class="box-filme"
+                        src="img/min5.jpg" alt="" srcset=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=4s4UCxCv_OE" target="_blank"><img class="box-filme"
+                        src="img/min6.jpg" alt="" srcset=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=l3-f58e3IQ8" target="_blank"><img class="box-filme"
+                        src="img/min7.jpg" alt="" srcset=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=kVHuAuzQIfY" target="_blank"><img class="box-filme"
+                        src="img/min8.jpg" alt="" srcset=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=WpwJQ-XhUPQ" target="_blank"><img class="box-filme"
+                        src="img/min9.jpg" alt="" srcset=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=ntZKQxuYyZ4" target="_blank"><img class="box-filme"
+                        src="img/min10.jpg" alt="" srcset=""></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-banner">
+        <div class="descricao-banner">
+            <h1 class="titulo-banner">Assista quando quiser.</h1>
+            <p class="descricao-banner">
+                Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.
+            </p>
+        </div>
+        <div class="">
+            <video class="video" src="video/anne.webm" poster="img/anne.jpg" preload="auto" autoplay controls
+                loop></video>
+
+        </div>
+    </div>
+    <div class="logo">
+        <div class="autor">
+            <a href="https://www.dio.me/" target="_blank">
+                <img src="img/dio.jpg">
+            </a>
+        </div>
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/7ec435e083.js" crossorigin="anonymous"></script>
+    <!--link para incones-->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <!--é aconselhavel colocar a linkagem do javascript no final do codigo-->
+    <script src="js/owl/setup.js"></script>
+</body>
+
+
+</html>
